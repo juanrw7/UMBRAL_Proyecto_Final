@@ -1,0 +1,16 @@
+OK 01 | Entrega 1: 10 puntos, [80,197], hueco 44
+TRAZA | etapa=1 | y=131 | arriba=33 | abajo=2 | espera=53 | derecha=117 | salida=136/-1 | puertaEnContacto=109 | ciclo=205
+OK 02 | Entrega 2: 20 puntos, [80,197], hueco 40
+TRAZA | etapa=2 | y=131 | arriba=33 | abajo=2 | espera=10 | derecha=117 | salida=134/-1 | puertaEnContacto=111 | ciclo=367
+OK 03 | Entrega 3: 30 puntos, [80,197], hueco 36
+TRAZA | etapa=3 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=90/-2 | puertaEnContacto=112 | ciclo=528
+OK 04 | Entrega 4: 40 puntos, [80,197], hueco 32
+TRAZA | etapa=4 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=88/-2 | puertaEnContacto=114 | ciclo=689
+OK 05 | Entrega 5: 50 puntos, [80,197], hueco 32
+TRAZA | etapa=5 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=86/-2 | puertaEnContacto=116 | ciclo=850
+OK 06 | Victoria 50 con titulo y aviso de espacio
+OK 07 | Resultado congelado sin entradas
+OK 08 | Espacio reinicia sin recargar VM
+OK 09 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 10 | Teclado liberado habilita otra pulsacion
+10 verificaciones, 861 muestras de teclado, 19659592 instrucciones VM

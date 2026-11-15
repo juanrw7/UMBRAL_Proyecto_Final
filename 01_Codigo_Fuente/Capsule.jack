@@ -1,0 +1,69 @@
+// Coordenadas de la esquina superior izquierda de una capsula de 8 x 8.
+class Capsule {
+    field int x, y, vx, vy;
+
+    constructor Capsule new() {
+        do reset();
+        return this;
+    }
+
+    method void reset() {
+        let x = 80;
+        let y = 197;
+        let vx = 0;
+        let vy = 0;
+        return;
+    }
+
+    method int getX() { return x; }
+    method int getY() { return y; }
+    method int getVX() { return vx; }
+    method int getVY() { return vy; }
+
+    function int limit(int velocity) {
+        if (velocity > 2) { return 2; }
+        if (velocity < -2) { return -2; }
+        return velocity;
+    }
+
+    method void impulse(int key) {
+        if (key = 130) { let vx = Capsule.limit(vx - 1); }
+        if (key = 131) { let vy = Capsule.limit(vy - 1); }
+        if (key = 132) { let vx = Capsule.limit(vx + 1); }
+        if (key = 133) { let vy = Capsule.limit(vy + 1); }
+        return;
+    }
+
+    // Resultado: 0 sin contacto derecho, 1 entrega, -1 rebote derecho.
+    // Se resuelve primero el eje Y, incluida una posible colision en esquina.
+    method int step(int key, Gate gate, boolean armed) {
+        do impulse(key);
+        let y = y + vy;
+        if ((y < 51) | ((y = 51) & (vy < 0))) {
+            let y = 51;
+            let vy = -vy;
+        }
+        if ((y > 223) | ((y = 223) & (vy > 0))) {
+            let y = 223;
+            let vy = -vy;
+        }
+
+        let x = x + vx;
+        if ((x < 34) | ((x = 34) & (vx < 0))) {
+            let x = 34;
+            let vx = -vx;
+        }
+        if ((x > 312) | ((x = 312) & (vx > 0))) {
+            let x = 312;
+            if (armed & gate.fits(y)) { return 1; }
+            let vx = -vx;
+            return -1;
+        }
+        return 0;
+    }
+
+    method void dispose() {
+        do Memory.deAlloc(this);
+        return;
+    }
+}

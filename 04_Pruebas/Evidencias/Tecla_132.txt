@@ -1,0 +1,3 @@
+OK 01 | KBD=132 durante 3000 ciclos, cero puntos, pared y limites verificados
+OK 02 | Descuentos: 1; intentos restantes: 3
+2 verificaciones, 3000 muestras de teclado, 52437038 instrucciones VM

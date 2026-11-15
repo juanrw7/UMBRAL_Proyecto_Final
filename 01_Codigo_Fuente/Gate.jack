@@ -1,0 +1,50 @@
+// La pared abre las filas inclusivas [top, top + height - 1].
+class Gate {
+    field int top, direction, height;
+
+    constructor Gate new() {
+        do reset();
+        return this;
+    }
+
+    method void reset() {
+        let top = 64;
+        let direction = 1;
+        let height = 48;
+        return;
+    }
+
+    method int getTop() { return top; }
+    method int getBottom() { return (top + height) - 1; }
+
+    method void advance() {
+        let top = top + direction;
+        if (~(top > 64)) {
+            let top = 64;
+            let direction = -direction;
+        }
+        if (~(top < 144)) {
+            let top = 144;
+            let direction = -direction;
+        }
+        return;
+    }
+
+    // Se llama en los cuatro primeros aciertos. Conserva posicion y sentido.
+    method void tighten() {
+        let height = height - 4;
+        if (height = 40) {
+            let direction = direction + direction;
+        }
+        return;
+    }
+
+    method boolean fits(int capsuleY) {
+        return (~(capsuleY < top)) & (~((capsuleY + 7) > getBottom()));
+    }
+
+    method void dispose() {
+        do Memory.deAlloc(this);
+        return;
+    }
+}

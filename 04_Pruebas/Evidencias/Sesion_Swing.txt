@@ -1,0 +1,28 @@
+OK 01 | Choque 1: rebota en x=312 y consume exactamente un intento
+OK 02 | Choque 2: rearme y descuento unico; puntaje 0
+OK 03 | Choque 3: rearme y descuento unico; puntaje 0
+OK 04 | Choque 4: rearme y descuento unico; puntaje 0
+OK 05 | Derrota estable con contador 0 y aviso de espacio
+OK 06 | Resultado congelado sin entradas
+OK 07 | Espacio reinicia sin recargar VM
+OK 08 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 09 | Teclado liberado habilita otra pulsacion
+OK 10 | Entrega 1: 10 puntos, [80,197], hueco 44
+TRAZA | etapa=1 | y=131 | arriba=33 | abajo=2 | espera=46 | derecha=117 | salida=136/-1 | puertaEnContacto=109 | ciclo=198
+OK 11 | Entrega 2: 20 puntos, [80,197], hueco 40
+TRAZA | etapa=2 | y=131 | arriba=33 | abajo=2 | espera=10 | derecha=117 | salida=134/-1 | puertaEnContacto=111 | ciclo=360
+OK 12 | Entrega 3: 30 puntos, [80,197], hueco 36
+TRAZA | etapa=3 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=90/-2 | puertaEnContacto=112 | ciclo=521
+OK 13 | Entrega 4: 40 puntos, [80,197], hueco 32
+TRAZA | etapa=4 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=88/-2 | puertaEnContacto=114 | ciclo=682
+OK 14 | Entrega 5: 50 puntos, [80,197], hueco 32
+TRAZA | etapa=5 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=86/-2 | puertaEnContacto=116 | ciclo=843
+OK 15 | Victoria 50 con titulo y aviso de espacio
+Victoria Swing: 843 ciclos, 21.46 s, 39.3 ciclos/s con comprobaciones
+OK 16 | Resultado congelado sin entradas
+OK 17 | Espacio reinicia sin recargar VM
+OK 18 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 19 | Teclado liberado habilita otra pulsacion
+OK 20 | Misma pila y mismos punteros de Game, Capsule y Gate
+PARTIDAS EN UNA CARGA: 1 victorias, 1 derrotas y 2 reinicios
+20 verificaciones, 1063 muestras de teclado, 446306 instrucciones VM

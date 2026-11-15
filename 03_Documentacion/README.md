@@ -1,0 +1,4 @@
+- [README de ejecución y mecánicas](../README.md)
+- [Arquitectura.pdf](Arquitectura.pdf)
+- [Manual_Ejecucion.pdf](Manual_Ejecucion.pdf)
+- [Publicar_GitHub.md](Publicar_GitHub.md)

@@ -1,0 +1,196 @@
+OK 01 | Choque 1: rebota en x=312 y consume exactamente un intento
+OK 02 | Choque 2: rearme y descuento unico; puntaje 0
+OK 03 | Choque 3: rearme y descuento unico; puntaje 0
+OK 04 | Choque 4: rearme y descuento unico; puntaje 0
+OK 05 | Derrota estable con contador 0 y aviso de espacio
+OK 06 | Resultado congelado sin entradas
+OK 07 | Espacio reinicia sin recargar VM
+OK 08 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 09 | Teclado liberado habilita otra pulsacion
+OK 10 | Entrega 1: 10 puntos, [80,197], hueco 44
+TRAZA | etapa=1 | y=131 | arriba=33 | abajo=2 | espera=46 | derecha=117 | salida=136/-1 | puertaEnContacto=109 | ciclo=198
+OK 11 | Entrega 2: 20 puntos, [80,197], hueco 40
+TRAZA | etapa=2 | y=131 | arriba=33 | abajo=2 | espera=10 | derecha=117 | salida=134/-1 | puertaEnContacto=111 | ciclo=360
+OK 12 | Entrega 3: 30 puntos, [80,197], hueco 36
+TRAZA | etapa=3 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=90/-2 | puertaEnContacto=112 | ciclo=521
+OK 13 | Entrega 4: 40 puntos, [80,197], hueco 32
+TRAZA | etapa=4 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=88/-2 | puertaEnContacto=114 | ciclo=682
+OK 14 | Entrega 5: 50 puntos, [80,197], hueco 32
+TRAZA | etapa=5 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=86/-2 | puertaEnContacto=116 | ciclo=843
+OK 15 | Victoria 50 con titulo y aviso de espacio
+OK 16 | Resultado congelado sin entradas
+OK 17 | Espacio reinicia sin recargar VM
+OK 18 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 19 | Teclado liberado habilita otra pulsacion
+OK 20 | Choque 1: rebota en x=312 y consume exactamente un intento
+OK 21 | Choque 2: rearme y descuento unico; puntaje 0
+OK 22 | Choque 3: rearme y descuento unico; puntaje 0
+OK 23 | Choque 4: rearme y descuento unico; puntaje 0
+OK 24 | Derrota estable con contador 0 y aviso de espacio
+OK 25 | Resultado congelado sin entradas
+OK 26 | Espacio reinicia sin recargar VM
+OK 27 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 28 | Teclado liberado habilita otra pulsacion
+OK 29 | Entrega 1: 10 puntos, [80,197], hueco 44
+TRAZA | etapa=1 | y=131 | arriba=33 | abajo=2 | espera=46 | derecha=117 | salida=136/-1 | puertaEnContacto=109 | ciclo=198
+OK 30 | Entrega 2: 20 puntos, [80,197], hueco 40
+TRAZA | etapa=2 | y=131 | arriba=33 | abajo=2 | espera=10 | derecha=117 | salida=134/-1 | puertaEnContacto=111 | ciclo=360
+OK 31 | Entrega 3: 30 puntos, [80,197], hueco 36
+TRAZA | etapa=3 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=90/-2 | puertaEnContacto=112 | ciclo=521
+OK 32 | Entrega 4: 40 puntos, [80,197], hueco 32
+TRAZA | etapa=4 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=88/-2 | puertaEnContacto=114 | ciclo=682
+OK 33 | Entrega 5: 50 puntos, [80,197], hueco 32
+TRAZA | etapa=5 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=86/-2 | puertaEnContacto=116 | ciclo=843
+OK 34 | Victoria 50 con titulo y aviso de espacio
+OK 35 | Resultado congelado sin entradas
+OK 36 | Espacio reinicia sin recargar VM
+OK 37 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 38 | Teclado liberado habilita otra pulsacion
+OK 39 | Choque 1: rebota en x=312 y consume exactamente un intento
+OK 40 | Choque 2: rearme y descuento unico; puntaje 0
+OK 41 | Choque 3: rearme y descuento unico; puntaje 0
+OK 42 | Choque 4: rearme y descuento unico; puntaje 0
+OK 43 | Derrota estable con contador 0 y aviso de espacio
+OK 44 | Resultado congelado sin entradas
+OK 45 | Espacio reinicia sin recargar VM
+OK 46 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 47 | Teclado liberado habilita otra pulsacion
+OK 48 | Entrega 1: 10 puntos, [80,197], hueco 44
+TRAZA | etapa=1 | y=131 | arriba=33 | abajo=2 | espera=46 | derecha=117 | salida=136/-1 | puertaEnContacto=109 | ciclo=198
+OK 49 | Entrega 2: 20 puntos, [80,197], hueco 40
+TRAZA | etapa=2 | y=131 | arriba=33 | abajo=2 | espera=10 | derecha=117 | salida=134/-1 | puertaEnContacto=111 | ciclo=360
+OK 50 | Entrega 3: 30 puntos, [80,197], hueco 36
+TRAZA | etapa=3 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=90/-2 | puertaEnContacto=112 | ciclo=521
+OK 51 | Entrega 4: 40 puntos, [80,197], hueco 32
+TRAZA | etapa=4 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=88/-2 | puertaEnContacto=114 | ciclo=682
+OK 52 | Entrega 5: 50 puntos, [80,197], hueco 32
+TRAZA | etapa=5 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=86/-2 | puertaEnContacto=116 | ciclo=843
+OK 53 | Victoria 50 con titulo y aviso de espacio
+OK 54 | Resultado congelado sin entradas
+OK 55 | Espacio reinicia sin recargar VM
+OK 56 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 57 | Teclado liberado habilita otra pulsacion
+OK 58 | Choque 1: rebota en x=312 y consume exactamente un intento
+OK 59 | Choque 2: rearme y descuento unico; puntaje 0
+OK 60 | Choque 3: rearme y descuento unico; puntaje 0
+OK 61 | Choque 4: rearme y descuento unico; puntaje 0
+OK 62 | Derrota estable con contador 0 y aviso de espacio
+OK 63 | Resultado congelado sin entradas
+OK 64 | Espacio reinicia sin recargar VM
+OK 65 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 66 | Teclado liberado habilita otra pulsacion
+OK 67 | Entrega 1: 10 puntos, [80,197], hueco 44
+TRAZA | etapa=1 | y=131 | arriba=33 | abajo=2 | espera=46 | derecha=117 | salida=136/-1 | puertaEnContacto=109 | ciclo=198
+OK 68 | Entrega 2: 20 puntos, [80,197], hueco 40
+TRAZA | etapa=2 | y=131 | arriba=33 | abajo=2 | espera=10 | derecha=117 | salida=134/-1 | puertaEnContacto=111 | ciclo=360
+OK 69 | Entrega 3: 30 puntos, [80,197], hueco 36
+TRAZA | etapa=3 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=90/-2 | puertaEnContacto=112 | ciclo=521
+OK 70 | Entrega 4: 40 puntos, [80,197], hueco 32
+TRAZA | etapa=4 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=88/-2 | puertaEnContacto=114 | ciclo=682
+OK 71 | Entrega 5: 50 puntos, [80,197], hueco 32
+TRAZA | etapa=5 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=86/-2 | puertaEnContacto=116 | ciclo=843
+OK 72 | Victoria 50 con titulo y aviso de espacio
+OK 73 | Resultado congelado sin entradas
+OK 74 | Espacio reinicia sin recargar VM
+OK 75 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 76 | Teclado liberado habilita otra pulsacion
+OK 77 | Choque 1: rebota en x=312 y consume exactamente un intento
+OK 78 | Choque 2: rearme y descuento unico; puntaje 0
+OK 79 | Choque 3: rearme y descuento unico; puntaje 0
+OK 80 | Choque 4: rearme y descuento unico; puntaje 0
+OK 81 | Derrota estable con contador 0 y aviso de espacio
+OK 82 | Resultado congelado sin entradas
+OK 83 | Espacio reinicia sin recargar VM
+OK 84 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 85 | Teclado liberado habilita otra pulsacion
+OK 86 | Entrega 1: 10 puntos, [80,197], hueco 44
+TRAZA | etapa=1 | y=131 | arriba=33 | abajo=2 | espera=46 | derecha=117 | salida=136/-1 | puertaEnContacto=109 | ciclo=198
+OK 87 | Entrega 2: 20 puntos, [80,197], hueco 40
+TRAZA | etapa=2 | y=131 | arriba=33 | abajo=2 | espera=10 | derecha=117 | salida=134/-1 | puertaEnContacto=111 | ciclo=360
+OK 88 | Entrega 3: 30 puntos, [80,197], hueco 36
+TRAZA | etapa=3 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=90/-2 | puertaEnContacto=112 | ciclo=521
+OK 89 | Entrega 4: 40 puntos, [80,197], hueco 32
+TRAZA | etapa=4 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=88/-2 | puertaEnContacto=114 | ciclo=682
+OK 90 | Entrega 5: 50 puntos, [80,197], hueco 32
+TRAZA | etapa=5 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=86/-2 | puertaEnContacto=116 | ciclo=843
+OK 91 | Victoria 50 con titulo y aviso de espacio
+OK 92 | Resultado congelado sin entradas
+OK 93 | Espacio reinicia sin recargar VM
+OK 94 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 95 | Teclado liberado habilita otra pulsacion
+OK 96 | Choque 1: rebota en x=312 y consume exactamente un intento
+OK 97 | Choque 2: rearme y descuento unico; puntaje 0
+OK 98 | Choque 3: rearme y descuento unico; puntaje 0
+OK 99 | Choque 4: rearme y descuento unico; puntaje 0
+OK 100 | Derrota estable con contador 0 y aviso de espacio
+OK 101 | Resultado congelado sin entradas
+OK 102 | Espacio reinicia sin recargar VM
+OK 103 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 104 | Teclado liberado habilita otra pulsacion
+OK 105 | Entrega 1: 10 puntos, [80,197], hueco 44
+TRAZA | etapa=1 | y=131 | arriba=33 | abajo=2 | espera=46 | derecha=117 | salida=136/-1 | puertaEnContacto=109 | ciclo=198
+OK 106 | Entrega 2: 20 puntos, [80,197], hueco 40
+TRAZA | etapa=2 | y=131 | arriba=33 | abajo=2 | espera=10 | derecha=117 | salida=134/-1 | puertaEnContacto=111 | ciclo=360
+OK 107 | Entrega 3: 30 puntos, [80,197], hueco 36
+TRAZA | etapa=3 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=90/-2 | puertaEnContacto=112 | ciclo=521
+OK 108 | Entrega 4: 40 puntos, [80,197], hueco 32
+TRAZA | etapa=4 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=88/-2 | puertaEnContacto=114 | ciclo=682
+OK 109 | Entrega 5: 50 puntos, [80,197], hueco 32
+TRAZA | etapa=5 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=86/-2 | puertaEnContacto=116 | ciclo=843
+OK 110 | Victoria 50 con titulo y aviso de espacio
+OK 111 | Resultado congelado sin entradas
+OK 112 | Espacio reinicia sin recargar VM
+OK 113 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 114 | Teclado liberado habilita otra pulsacion
+OK 115 | Choque 1: rebota en x=312 y consume exactamente un intento
+OK 116 | Choque 2: rearme y descuento unico; puntaje 0
+OK 117 | Choque 3: rearme y descuento unico; puntaje 0
+OK 118 | Choque 4: rearme y descuento unico; puntaje 0
+OK 119 | Derrota estable con contador 0 y aviso de espacio
+OK 120 | Resultado congelado sin entradas
+OK 121 | Espacio reinicia sin recargar VM
+OK 122 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 123 | Teclado liberado habilita otra pulsacion
+OK 124 | Entrega 1: 10 puntos, [80,197], hueco 44
+TRAZA | etapa=1 | y=131 | arriba=33 | abajo=2 | espera=46 | derecha=117 | salida=136/-1 | puertaEnContacto=109 | ciclo=198
+OK 125 | Entrega 2: 20 puntos, [80,197], hueco 40
+TRAZA | etapa=2 | y=131 | arriba=33 | abajo=2 | espera=10 | derecha=117 | salida=134/-1 | puertaEnContacto=111 | ciclo=360
+OK 126 | Entrega 3: 30 puntos, [80,197], hueco 36
+TRAZA | etapa=3 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=90/-2 | puertaEnContacto=112 | ciclo=521
+OK 127 | Entrega 4: 40 puntos, [80,197], hueco 32
+TRAZA | etapa=4 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=88/-2 | puertaEnContacto=114 | ciclo=682
+OK 128 | Entrega 5: 50 puntos, [80,197], hueco 32
+TRAZA | etapa=5 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=86/-2 | puertaEnContacto=116 | ciclo=843
+OK 129 | Victoria 50 con titulo y aviso de espacio
+OK 130 | Resultado congelado sin entradas
+OK 131 | Espacio reinicia sin recargar VM
+OK 132 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 133 | Teclado liberado habilita otra pulsacion
+OK 134 | Choque 1: rebota en x=312 y consume exactamente un intento
+OK 135 | Choque 2: rearme y descuento unico; puntaje 0
+OK 136 | Choque 3: rearme y descuento unico; puntaje 0
+OK 137 | Choque 4: rearme y descuento unico; puntaje 0
+OK 138 | Derrota estable con contador 0 y aviso de espacio
+OK 139 | Resultado congelado sin entradas
+OK 140 | Espacio reinicia sin recargar VM
+OK 141 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 142 | Teclado liberado habilita otra pulsacion
+OK 143 | Entrega 1: 10 puntos, [80,197], hueco 44
+TRAZA | etapa=1 | y=131 | arriba=33 | abajo=2 | espera=46 | derecha=117 | salida=136/-1 | puertaEnContacto=109 | ciclo=198
+OK 144 | Entrega 2: 20 puntos, [80,197], hueco 40
+TRAZA | etapa=2 | y=131 | arriba=33 | abajo=2 | espera=10 | derecha=117 | salida=134/-1 | puertaEnContacto=111 | ciclo=360
+OK 145 | Entrega 3: 30 puntos, [80,197], hueco 36
+TRAZA | etapa=3 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=90/-2 | puertaEnContacto=112 | ciclo=521
+OK 146 | Entrega 4: 40 puntos, [80,197], hueco 32
+TRAZA | etapa=4 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=88/-2 | puertaEnContacto=114 | ciclo=682
+OK 147 | Entrega 5: 50 puntos, [80,197], hueco 32
+TRAZA | etapa=5 | y=131 | arriba=33 | abajo=2 | espera=9 | derecha=117 | salida=86/-2 | puertaEnContacto=116 | ciclo=843
+OK 148 | Victoria 50 con titulo y aviso de espacio
+OK 149 | Resultado congelado sin entradas
+OK 150 | Espacio reinicia sin recargar VM
+OK 151 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 152 | Teclado liberado habilita otra pulsacion
+OK 153 | Misma pila y mismos punteros de Game, Capsule y Gate
+OK 154 | Balance de bloques asignados constante: 202 (reservas=464, liberaciones=262)
+PARTIDAS EN UNA CARGA: 8 victorias, 8 derrotas y 16 reinicios
+154 verificaciones, 8504 muestras de teclado, 187882527 instrucciones VM

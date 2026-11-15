@@ -1,0 +1,12 @@
+OK 01 | Retiro fisico a x=287, rearme y frenado horizontal
+OK 02 | Reintento legitimo: 10 puntos, conserva 3 de los 4 intentos
+OK 03 | Choque 1: rebota en x=312 y consume exactamente un intento
+OK 04 | Choque 2: rearme y descuento unico; puntaje 10
+OK 05 | Choque 3: rearme y descuento unico; puntaje 10
+OK 06 | Derrota estable con contador 0 y aviso de espacio
+OK 07 | Derrota posterior conserva los 10 puntos
+OK 08 | Resultado congelado sin entradas
+OK 09 | Espacio reinicia sin recargar VM
+OK 10 | Espacio mantenido avanza seis ciclos normales; no vuelve a reiniciar
+OK 11 | Teclado liberado habilita otra pulsacion
+11 verificaciones, 388 muestras de teclado, 10286256 instrucciones VM

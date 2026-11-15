@@ -1,0 +1,4 @@
+OK 01 | Un choque antes del vencimiento reemplaza LISTO y vuelve a desarmar
+OK 02 | Derrota tiene prioridad sobre los avisos activos
+OK 03 | Victoria tiene prioridad y conserva el intento global restante
+3 verificaciones, 199 muestras de teclado, 6266289 instrucciones VM

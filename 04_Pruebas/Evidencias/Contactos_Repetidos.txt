@@ -1,0 +1,3 @@
+OK 01 | Aproximacion fuera de fase pierde un intento
+OK 02 | Bloqueado junto a la pared, incluso en 84 contactos geometricamente abiertos
+2 verificaciones, 472 muestras de teclado, 10091740 instrucciones VM

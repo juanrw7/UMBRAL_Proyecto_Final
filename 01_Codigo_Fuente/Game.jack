@@ -1,0 +1,206 @@
+// Estado: 0 jugando, 1 victoria, 2 derrota. Los objetos se reutilizan al reiniciar.
+class Game {
+    field Capsule capsule;
+    field Gate gate;
+    field int score, attempts, state;
+    field boolean armed, spaceReady;
+    field int retryTicks;
+
+    constructor Game new() {
+        let capsule = Capsule.new();
+        let gate = Gate.new();
+        let spaceReady = true;
+        return this;
+    }
+
+    method void run() {
+        do restart();
+        while (true) {
+            do update(Keyboard.keyPressed());
+            do Sys.wait(18);
+        }
+        return;
+    }
+
+    method void restart() {
+        let score = 0;
+        let attempts = 4;
+        let retryTicks = 0;
+        let state = 0;
+        let armed = true;
+        do capsule.reset();
+        do gate.reset();
+        do drawScene();
+        return;
+    }
+
+    method void update(int key) {
+        // Un cero confirma que el teclado se libero. Espacio en juego se consume
+        // tambien, para que un espacio sostenido al finalizar no salte el resultado.
+        if (key = 0) { let spaceReady = true; }
+        if ((key = 32) & spaceReady) {
+            let spaceReady = false;
+            if (state > 0) {
+                do restart();
+                return;
+            }
+        }
+        if (state = 0) { do tick(key); }
+        return;
+    }
+
+    method void tick(int key) {
+        var int oldX, oldY, oldTop, oldBottom, newX, newY, contact, oldFooter, newFooter;
+        let oldFooter = footerMode();
+        if (retryTicks > 0) { let retryTicks = retryTicks - 1; }
+        let oldX = capsule.getX();
+        let oldY = capsule.getY();
+        let oldTop = gate.getTop();
+        let oldBottom = gate.getBottom();
+
+        do gate.advance();
+        let contact = capsule.step(key, gate, armed);
+        if (contact = 1) {
+            let score = score + 10;
+            do capsule.reset();
+            if (score = 50) { let state = 1; }
+            else { do gate.tighten(); }
+            do drawHud();
+        }
+        if ((contact = -1) & armed) {
+            let attempts = attempts - 1;
+            let armed = false;
+            let retryTicks = 0;
+            if (attempts = 0) { let state = 2; }
+            do drawHud();
+        }
+
+        let newX = capsule.getX();
+        let newY = capsule.getY();
+        if ((~armed) & (~(newX > 288))) {
+            let armed = true;
+            // 93 actualizaciones equivalen a 1,68 s de espera nominal.
+            let retryTicks = 93;
+        }
+        if ((~(oldX = newX)) | (~(oldY = newY))) {
+            do Game.drawCapsule(oldX, oldY, false);
+            do Game.drawCapsule(newX, newY, true);
+        }
+        do shiftGate(oldTop, oldBottom, gate.getTop(), gate.getBottom());
+        if (state > 0) {
+            let retryTicks = 0;
+            do drawResult();
+        } else {
+            let newFooter = footerMode();
+            if (~(oldFooter = newFooter)) { do drawFooter(newFooter); }
+        }
+        return;
+    }
+
+    method void drawScene() {
+        do Screen.clearScreen();
+        do drawPanel();
+        do drawHud();
+
+        do Screen.setColor(true);
+        do Screen.drawRectangle(32, 49, 327, 50);
+        do Screen.drawRectangle(32, 231, 327, 232);
+        do Screen.drawRectangle(32, 51, 33, 230);
+        do Screen.drawRectangle(320, 51, 327, gate.getTop() - 1);
+        do Screen.drawRectangle(320, gate.getBottom() + 1, 327, 230);
+        do Game.drawCapsule(capsule.getX(), capsule.getY(), true);
+        return;
+    }
+
+    method void shiftGate(int oldTop, int oldBottom, int top, int bottom) {
+        do Screen.setColor(true);
+        if (top > oldTop) { do Screen.drawRectangle(320, oldTop, 327, top - 1); }
+        if (bottom < oldBottom) { do Screen.drawRectangle(320, bottom + 1, 327, oldBottom); }
+        do Screen.setColor(false);
+        if (top < oldTop) { do Screen.drawRectangle(320, top, 327, oldTop - 1); }
+        if (bottom > oldBottom) { do Screen.drawRectangle(320, oldBottom + 1, 327, bottom); }
+        return;
+    }
+
+    // El recinto termina en x=327. El panel comienza en x=336.
+    method void drawPanel() {
+        do Output.moveCursor(1, 42);
+        do Game.write("PUNTAJE: 00/50");
+        do Output.moveCursor(2, 42);
+        do Game.write("ENTREGA: 1/5");
+        do Output.moveCursor(3, 42);
+        do Game.write("INTENTOS: 4");
+        return;
+    }
+
+    method void drawHud() {
+        var int tens;
+        let tens = score / 10;
+        // Borrar solo los digitos variables, manteniendo las etiquetas y barras.
+        do Screen.setColor(false);
+        do Screen.drawRectangle(408, 11, 423, 21);
+        do Screen.drawRectangle(408, 22, 415, 32);
+        do Screen.drawRectangle(416, 33, 423, 43);
+        do Output.moveCursor(1, 51);
+        do Output.printChar(48 + tens);
+        do Output.printChar(48);
+        do Output.moveCursor(2, 51);
+        if (tens < 5) { do Output.printChar(49 + tens); }
+        else { do Output.printChar(53); }
+        do Output.moveCursor(3, 52);
+        do Output.printChar(48 + attempts);
+        return;
+    }
+
+    // 0: pie vacio, 1: retroceso obligatorio, 2: aproximacion habilitada.
+    method int footerMode() {
+        if (~armed) { return 1; }
+        if (retryTicks > 0) { return 2; }
+        return 0;
+    }
+
+    method void drawFooter(int mode) {
+        do Game.clearFooter();
+        if (mode = 1) {
+            // Una sola marca temporal, fuera del recinto, en el umbral de rearme.
+            do Screen.setColor(true);
+            do Screen.drawLine(288, 43, 288, 47);
+            do Output.moveCursor(22, 4);
+            do Game.write("RETROCEDE A LA MARCA PARA REINTENTAR");
+        }
+        if (mode = 2) {
+            do Output.moveCursor(22, 4);
+            do Game.write("LISTO PARA REINTENTAR");
+        }
+        return;
+    }
+
+    method void drawResult() {
+        do Output.moveCursor(5, 42);
+        if (state = 1) { do Game.write("PARTIDA COMPLETA"); }
+        else { do Game.write("DERROTA"); }
+        do Game.clearFooter();
+        do Output.moveCursor(22, 4);
+        do Game.write("PRESIONA ESPACIO PARA JUGAR DE NUEVO");
+        return;
+    }
+
+    function void clearFooter() {
+        do Screen.setColor(false);
+        do Screen.drawRectangle(0, 242, 511, 252);
+        do Screen.drawLine(288, 43, 288, 47);
+        return;
+    }
+
+    function void drawCapsule(int x, int y, boolean color) {
+        do Screen.setColor(color);
+        do Screen.drawRectangle(x, y, x + 7, y + 7);
+        return;
+    }
+
+    function void write(String message) {
+        do Output.printString(message);
+        do message.dispose();
+        return;
+    }
+}

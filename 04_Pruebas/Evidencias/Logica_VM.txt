@@ -1,0 +1,39 @@
+OK 01 | Origen (80,197), cuatro intentos globales y hueco inicial
+OK 02 | Hueco avanza sin teclado
+OK 03 | Izquierda
+OK 04 | Inercia
+OK 05 | Derecha frena
+OK 06 | Derecha impulsa
+OK 07 | Arriba impulsa sin cambiar vx
+OK 08 | Abajo frena
+OK 09 | Abajo impulsa
+OK 10 | Saturacion positiva en X
+OK 11 | Saturacion negativa en X
+OK 12 | Saturacion positiva en Y
+OK 13 | Saturacion negativa en Y
+OK 14 | Rebote izquierdo sin perder intento
+OK 15 | Rebote superior sin perder intento
+OK 16 | Rebote inferior sin perder intento
+OK 17 | Rebote en esquina superior izquierda
+OK 18 | Hueco 48: sobresale un pixel por arriba, rebota sin anotar
+OK 19 | Hueco 48: sobresale un pixel por abajo, rebota sin anotar
+OK 20 | Hueco 44: sobresale un pixel por arriba, rebota sin anotar
+OK 21 | Hueco 44: sobresale un pixel por abajo, rebota sin anotar
+OK 22 | Hueco 40: sobresale un pixel por arriba, rebota sin anotar
+OK 23 | Hueco 40: sobresale un pixel por abajo, rebota sin anotar
+OK 24 | Hueco 36: sobresale un pixel por arriba, rebota sin anotar
+OK 25 | Hueco 36: sobresale un pixel por abajo, rebota sin anotar
+OK 26 | Hueco 32: sobresale un pixel por arriba, rebota sin anotar
+OK 27 | Hueco 32: sobresale un pixel por abajo, rebota sin anotar
+OK 28 | Paso 2 corrige e invierte en 144
+OK 29 | Paso 2 corrige e invierte en 64
+OK 30 | Primer borde inclusivo, +10 y reaparicion
+OK 31 | Sin anotacion duplicada al siguiente ciclo
+OK 32 | Ultima fila inclusiva valida, sin restaurar el intento perdido
+OK 33 | Espacio al entrar en derrota se consume; el resultado sigue visible
+OK 34 | Espacio sostenido no salta el resultado
+OK 35 | Soltar espacio arma una nueva pulsacion
+OK 36 | Nueva pulsacion restaura origen, intentos, fase y puntaje
+OK 37 | Espacio sostenido en partida nueva no vuelve a reiniciar
+OK 38 | Espacio durante juego activo no reinicia
+38 verificaciones, 42 muestras de teclado, 3395978 instrucciones VM

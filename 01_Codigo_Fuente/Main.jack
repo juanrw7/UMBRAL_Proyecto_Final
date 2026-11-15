@@ -1,0 +1,9 @@
+// Un solo juego por ejecucion del programa; espacio reutiliza sus objetos.
+class Main {
+    function void main() {
+        var Game game;
+        let game = Game.new();
+        do game.run();
+        return;
+    }
+}

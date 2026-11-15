@@ -1,0 +1,237 @@
+function Capsule.new 0
+push constant 4
+call Memory.alloc 1
+pop pointer 0
+push pointer 0
+call Capsule.reset 1
+pop temp 0
+push pointer 0
+return
+function Capsule.reset 0
+push argument 0
+pop pointer 0
+push constant 80
+pop this 0
+push constant 197
+pop this 1
+push constant 0
+pop this 2
+push constant 0
+pop this 3
+push constant 0
+return
+function Capsule.getX 0
+push argument 0
+pop pointer 0
+push this 0
+return
+function Capsule.getY 0
+push argument 0
+pop pointer 0
+push this 1
+return
+function Capsule.getVX 0
+push argument 0
+pop pointer 0
+push this 2
+return
+function Capsule.getVY 0
+push argument 0
+pop pointer 0
+push this 3
+return
+function Capsule.limit 0
+push argument 0
+push constant 2
+gt
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 2
+return
+label IF_FALSE0
+push argument 0
+push constant 2
+neg
+lt
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 2
+neg
+return
+label IF_FALSE1
+push argument 0
+return
+function Capsule.impulse 0
+push argument 0
+pop pointer 0
+push argument 1
+push constant 130
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push this 2
+push constant 1
+sub
+call Capsule.limit 1
+pop this 2
+label IF_FALSE0
+push argument 1
+push constant 131
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push this 3
+push constant 1
+sub
+call Capsule.limit 1
+pop this 3
+label IF_FALSE1
+push argument 1
+push constant 132
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push this 2
+push constant 1
+add
+call Capsule.limit 1
+pop this 2
+label IF_FALSE2
+push argument 1
+push constant 133
+eq
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push this 3
+push constant 1
+add
+call Capsule.limit 1
+pop this 3
+label IF_FALSE3
+push constant 0
+return
+function Capsule.step 0
+push argument 0
+pop pointer 0
+push pointer 0
+push argument 1
+call Capsule.impulse 2
+pop temp 0
+push this 1
+push this 3
+add
+pop this 1
+push this 1
+push constant 51
+lt
+push this 1
+push constant 51
+eq
+push this 3
+push constant 0
+lt
+and
+or
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 51
+pop this 1
+push this 3
+neg
+pop this 3
+label IF_FALSE0
+push this 1
+push constant 223
+gt
+push this 1
+push constant 223
+eq
+push this 3
+push constant 0
+gt
+and
+or
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 223
+pop this 1
+push this 3
+neg
+pop this 3
+label IF_FALSE1
+push this 0
+push this 2
+add
+pop this 0
+push this 0
+push constant 34
+lt
+push this 0
+push constant 34
+eq
+push this 2
+push constant 0
+lt
+and
+or
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+push constant 34
+pop this 0
+push this 2
+neg
+pop this 2
+label IF_FALSE2
+push this 0
+push constant 312
+gt
+push this 0
+push constant 312
+eq
+push this 2
+push constant 0
+gt
+and
+or
+if-goto IF_TRUE3
+goto IF_FALSE3
+label IF_TRUE3
+push constant 312
+pop this 0
+push argument 3
+push argument 2
+push this 1
+call Gate.fits 2
+and
+if-goto IF_TRUE4
+goto IF_FALSE4
+label IF_TRUE4
+push constant 1
+return
+label IF_FALSE4
+push this 2
+neg
+pop this 2
+push constant 1
+neg
+return
+label IF_FALSE3
+push constant 0
+return
+function Capsule.dispose 0
+push argument 0
+pop pointer 0
+push pointer 0
+call Memory.deAlloc 1
+pop temp 0
+push constant 0
+return

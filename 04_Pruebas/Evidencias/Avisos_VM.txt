@@ -1,0 +1,8 @@
+OK 01 | HUD visible y sin marcas permanentes, guias, titulo o pie
+OK 02 | Choque cambia el pie y resta exactamente un intento
+OK 03 | Retroceso obligatorio visible tras 70 muestras y puerta en movimiento
+OK 04 | Rearme borra la marca e inicia un aviso de 70 actualizaciones
+OK 05 | Fase de 70 muestras: la puerta, la capsula y el freno siguen activos
+OK 06 | Al terminar las 70 muestras el pie queda vacio, sin residuos
+OK 07 | El panel fijo y el margen se conservan y no quedan guias ni avisos
+7 verificaciones, 270 muestras de teclado, 7038894 instrucciones VM

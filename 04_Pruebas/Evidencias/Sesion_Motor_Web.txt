@@ -1,0 +1,8 @@
+Derrota estable, 0 intentos, ciclo 198
+Espacio reinicia una vez tras perder, ciclo 206
+Puntaje 10 en ciclo 404
+Puntaje 20 en ciclo 566
+Puntaje 30 en ciclo 727
+Puntaje 40 en ciclo 888
+Puntaje 50 en ciclo 1049
+Victoria a 50 y partida nueva, sin recargar. Total de muestras: 1051

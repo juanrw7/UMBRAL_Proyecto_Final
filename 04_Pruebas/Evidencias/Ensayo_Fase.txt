@@ -1,0 +1,7 @@
+OK 01 | Fase estimada, dos pulsos separados y avance por inercia: 10 puntos (salida 135)
+OK 02 | Fase estimada, dos pulsos separados y avance por inercia: 20 puntos (salida 135)
+OK 03 | Fase estimada, dos pulsos separados y avance por inercia: 30 puntos (salida 88)
+OK 04 | Fase estimada, dos pulsos separados y avance por inercia: 40 puntos (salida 88)
+OK 05 | Fase estimada, dos pulsos separados y avance por inercia: 50 puntos (salida 88)
+OK 06 | Partida con ventanas y deriva deliberada llega a 50
+6 verificaciones, 848 muestras de teclado, 19204717 instrucciones VM

@@ -1,0 +1,7 @@
+OK 01 | Entrega 1: 10 puntos con 3 intentos globales
+OK 02 | Entrega 2: 20 puntos con 3 intentos globales
+OK 03 | Entrega 3: 30 puntos con 2 intentos globales
+OK 04 | Entrega 4: 40 puntos con 2 intentos globales
+OK 05 | Entrega 5: 50 puntos con 1 intentos globales
+OK 06 | Victoria incluso con tres fallos: queda un intento
+6 verificaciones, 925 muestras de teclado, 21320430 instrucciones VM

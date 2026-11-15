@@ -1,0 +1,113 @@
+function Gate.new 0
+push constant 3
+call Memory.alloc 1
+pop pointer 0
+push pointer 0
+call Gate.reset 1
+pop temp 0
+push pointer 0
+return
+function Gate.reset 0
+push argument 0
+pop pointer 0
+push constant 64
+pop this 0
+push constant 1
+pop this 1
+push constant 48
+pop this 2
+push constant 0
+return
+function Gate.getTop 0
+push argument 0
+pop pointer 0
+push this 0
+return
+function Gate.getBottom 0
+push argument 0
+pop pointer 0
+push this 0
+push this 2
+add
+push constant 1
+sub
+return
+function Gate.advance 0
+push argument 0
+pop pointer 0
+push this 0
+push this 1
+add
+pop this 0
+push this 0
+push constant 64
+gt
+not
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push constant 64
+pop this 0
+push this 1
+neg
+pop this 1
+label IF_FALSE0
+push this 0
+push constant 144
+lt
+not
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+push constant 144
+pop this 0
+push this 1
+neg
+pop this 1
+label IF_FALSE1
+push constant 0
+return
+function Gate.tighten 0
+push argument 0
+pop pointer 0
+push this 2
+push constant 4
+sub
+pop this 2
+push this 2
+push constant 40
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+push this 1
+push this 1
+add
+pop this 1
+label IF_FALSE0
+push constant 0
+return
+function Gate.fits 0
+push argument 0
+pop pointer 0
+push argument 1
+push this 0
+lt
+not
+push argument 1
+push constant 7
+add
+push pointer 0
+call Gate.getBottom 1
+gt
+not
+and
+return
+function Gate.dispose 0
+push argument 0
+pop pointer 0
+push pointer 0
+call Memory.deAlloc 1
+pop temp 0
+push constant 0
+return

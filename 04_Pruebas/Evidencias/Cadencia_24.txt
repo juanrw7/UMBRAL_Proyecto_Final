@@ -1,0 +1,4 @@
+OK 01 | 117 muestras, 150 px sin tecla y rebote esperado
+OK 02 | Dos muestras de la tecla contraria frenan sin alterar la fisica
+MEDICION_GUI | 117 actualizaciones | 3.071 s | 38.10 actualizaciones/s
+2 verificaciones, 119 muestras de teclado, 50401 instrucciones VM

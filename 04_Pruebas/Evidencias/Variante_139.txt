@@ -1,0 +1,12 @@
+OK 01 | Entrega 1: 10 puntos, [80,197], hueco 44
+TRAZA | etapa=1 | y=139 | arriba=29 | abajo=2 | espera=42 | derecha=117 | salida=128/-1 | puertaEnContacto=117 | ciclo=190
+OK 02 | Entrega 2: 20 puntos, [80,197], hueco 40
+TRAZA | etapa=2 | y=139 | arriba=29 | abajo=2 | espera=14 | derecha=117 | salida=126/-1 | puertaEnContacto=119 | ciclo=352
+OK 03 | Entrega 3: 30 puntos, [80,197], hueco 36
+TRAZA | etapa=3 | y=139 | arriba=29 | abajo=2 | espera=13 | derecha=117 | salida=82/-2 | puertaEnContacto=120 | ciclo=513
+OK 04 | Entrega 4: 40 puntos, [80,197], hueco 32
+TRAZA | etapa=4 | y=139 | arriba=29 | abajo=2 | espera=13 | derecha=117 | salida=80/-2 | puertaEnContacto=122 | ciclo=674
+OK 05 | Entrega 5: 50 puntos, [80,197], hueco 32
+TRAZA | etapa=5 | y=139 | arriba=29 | abajo=2 | espera=13 | derecha=117 | salida=78/-2 | puertaEnContacto=124 | ciclo=835
+OK 06 | Victoria 50 con titulo y aviso de espacio
+6 verificaciones, 858 muestras de teclado, 19280717 instrucciones VM
