@@ -23,7 +23,7 @@ La configuración final utiliza 18 ms por actualización, elegida después de pr
 - **HUD.** Se compararon las palabras fijas del panel y el margen durante avisos y entregas. Las regiones antes ocupadas por ayudas y marcas quedaron en blanco, incluido el reinicio desde ambos resultados. En las capturas Swing se cotejaron los bits visibles con la RAM de video.
 - **Ejecución continua.** 8.504 muestras, 8 victorias, 8 derrotas y 16 reinicios sin cargar otra vez. La pila, las referencias y el balance de asignaciones quedaron estables en el ensayo con OS en VM. Se observaron 464 reservas y 262 liberaciones, diferencia de 202, igual a la inicial. Esta cifra incluye reservas del OS.
 
-Los controladores son herramientas externas. El de recuperación escoge fases por cálculo y los demás reproducen teclas. Ninguno escribe datos de la partida para lograr una victoria. Los cambios de RAM de los casos aislados están indicados en el fuente de pruebas. No se usaron capturas viejas. El ensayo con teclado físico de v5 queda pendiente.
+Los controladores son herramientas externas. El de recuperación selecciona fases mediante cálculos y los demás reproducen entradas de teclado. Ninguno modifica los datos de la partida para conseguir una victoria. Las modificaciones de RAM utilizadas para preparar estados aislados están identificadas en el código de pruebas. Las capturas y los registros de las configuraciones anteriores se conservan como evidencia histórica. La versión definitiva con `Sys.wait(18)` y `retryTicks = 93` también fue probada manualmente en Nand2Tetris Online. La demostración presencial en el equipo de clase permanece pendiente.
 
 ## Repetir las pruebas
 
