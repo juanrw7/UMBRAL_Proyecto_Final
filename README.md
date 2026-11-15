@@ -79,7 +79,6 @@ cp 01_Codigo_Fuente/*.vm 02_Ejecutable_VM/
 ## Verificación y publicación
 
 - [Matriz de pruebas](04_Pruebas/Matriz_Pruebas.md) y [resultados reproducibles](04_Pruebas/Resultados_Verificacion.md).
-- [Auditoría contra Teams y la rúbrica](04_Pruebas/Auditoria_Rubrica.md).
 - [manual](03_Documentacion/Manual_Ejecucion.pdf).
 
 ## ENLACE DEL VIDEO DE YOUTUBE
