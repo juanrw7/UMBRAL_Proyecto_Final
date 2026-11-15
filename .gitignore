@@ -1,4 +1,14 @@
+# Archivos VM generados durante la compilación
 01_Codigo_Fuente/*.vm
+
+# Archivos temporales de las pruebas
 04_Pruebas/Evidencias/frames/
-06_Video/*.mp4
 04_Pruebas/salida_local/
+
+# Archivos del sistema y del editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Archivos compilados de Java
+*.class

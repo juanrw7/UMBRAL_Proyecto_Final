@@ -6,12 +6,12 @@ Videojuego 2D en Jack para la arquitectura Hack. Guía una cápsula de 8 × 8 ha
 
 ## Abrir en Nand2Tetris Online
 
-1. Extrae este ZIP y abre el [Jack Compiler oficial](https://nand2tetris.github.io/web-ide/compiler).
+1. Descarga el repositorio y abre el [Jack Compiler oficial](https://nand2tetris.github.io/web-ide/compiler).
 2. Pulsa 📂 y selecciona la carpeta **01_Codigo_Fuente**, donde están los cuatro archivos .jack.
 3. Pulsa **Compile → Run**. Si el VM Emulator está pausado, inicia su ejecución. Da foco a su control de teclado.
 4. Usa una flecha a la vez. Al ganar o perder, suelta el teclado y pulsa **Espacio**.
 
-La v5 se compiló y ejecutó con el motor del IDE por terminal. También se comprobó en la interfaz gráfica oficial de escritorio. La prueba humana de la versión anterior se hizo con la v4, según informó el estudiante.
+La versión final de UMBRAL se compiló y verificó mediante el motor de Nand2Tetris y el VM Emulator oficial. Adicionalmente, se probó manualmente en Nand2Tetris Online con la configuración definitiva `Sys.wait(18)`, comprobando el movimiento de la cápsula, la inercia, la abertura móvil, las cinco entregas, la victoria con 50 puntos y el reinicio mediante la barra espaciadora.
 
 ## Abrir en el VM Emulator de escritorio
 
@@ -31,7 +31,7 @@ Desde el origen, **sube hasta quedar un poco por encima de la mitad de la cámar
 
 Si chocas contra la pared derecha fuera de la abertura, la cápsula rebota y baja un intento. **Deja que se aleje hasta la marca temporal**, o impúlsala con ←, antes de volver hacia la derecha. Se rearma cuando la esquina izquierda de la cápsula llega a x≤288, a 24 px del contacto. Junto a la pared, los contactos del mismo acercamiento no descuentan ni anotan: retroceder forma parte del reintento. Las demás paredes no consumen intentos. Si aciertas, vuelves al origen con **los intentos que te queden**. Solo una partida nueva los devuelve a cuatro.
 
-El pie muestra **RETROCEDE A LA MARCA PARA REINTENTAR** mientras falta el rearme. Después muestra **LISTO PARA REINTENTAR** durante **70 actualizaciones** (1,68 s nominales), y el pie vuelve a quedar vacío. Otro fallo reemplaza el aviso. La victoria o la derrota muestran siempre el resultado y la instrucción de Espacio.
+El pie muestra **RETROCEDE A LA MARCA PARA REINTENTAR** mientras falta el rearme. Después muestra **LISTO PARA REINTENTAR** durante **93 actualizaciones** (aproximadamente 1,67 s de espera nominal con `Sys.wait(18)`, más el tiempo de procesamiento), y el pie vuelve a quedar vacío. Otro fallo reemplaza el aviso. La victoria o la derrota muestran siempre el resultado y la instrucción de Espacio.
 
 Consulta la [secuencia verificada de victoria y derrota](04_Pruebas/Secuencia_Demo.md)
 

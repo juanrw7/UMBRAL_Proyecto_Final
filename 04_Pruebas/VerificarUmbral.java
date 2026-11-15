@@ -492,21 +492,21 @@ public final class VerificarUmbral {
         int elapsed=0;
         while(!armed()&&elapsed++<30)tick(LEFT);
         long retry=footer();
-        pass("Rearme borra la marca e inicia un aviso de 70 actualizaciones",retry!=retreat&&retry!=controls&&retryTicks()==70&&armed()&&rearmMark()==0);
+        pass("Rearme borra la marca e inicia un aviso de 93 actualizaciones",retry!=retreat&&retry!=controls&&retryTicks()==93&&armed()&&rearmMark()==0);
         if(evidence)capture("Aviso_Listo");
         long startTime=System.nanoTime();
         start=top();
         int before=x();
-        for(int i=1;i<=69;i++){
+        for(int i=1;i<=92;i++){
             tick(i==5?RIGHT:0);
             if(i==5)check(vx()==-1,"El freno no respondio durante el aviso");
-            check(footer()==retry&&retryTicks()==70-i,"Aviso cambio antes de tiempo");
+            check(footer()==retry&&retryTicks()==93-i,"Aviso cambio antes de tiempo");
         }
-        pass("Fase de 70 muestras: la puerta, la capsula y el freno siguen activos",top()!=start&&x()!=before&&gatePixels());
+        pass("Fase de 93 muestras: la puerta, la capsula y el freno siguen activos",top()!=start&&x()!=before&&gatePixels());
         tick(0);
-        pass("Al terminar las 70 muestras el pie queda vacio, sin residuos",footer()==controls&&retryTicks()==0);
+        pass("Al terminar las 93 muestras el pie queda vacio, sin residuos",footer()==controls&&retryTicks()==0);
         if(visual)System.out.printf(java.util.Locale.ROOT,
-            "AVISO MEDIDO | 70 actualizaciones | %.3f s con comprobaciones%n",
+            "AVISO MEDIDO | 93 actualizaciones | %.3f s con comprobaciones%n",
             (System.nanoTime()-startTime)/1e9);
         pass("El panel fijo y el margen se conservan y no quedan guias ni avisos",panel()==staticPanel&&minimal());
         if(evidence)capture("Aviso_Vencido");
