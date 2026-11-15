@@ -12,7 +12,7 @@
 | 8 | Victoria | Se llegó a 50 en una ruta base, dos alturas alternativas, una estimación de fase sin guías y una recuperación de tres fallos | Victoria_VM, Variante_125, Variante_139, Ensayo_Fase_Swing, Victoria_Tres_Fallos_Swing |
 | 9 | Derrota | 4→3→2→1→0. Probada conservación de 10 puntos en otra corrida | Sesion_Swing, Recuperacion |
 | 10 | Espacio | Victoria y derrota reinician origen, fase, puntaje, etapa e intentos. Mantener la tecla no repite el reinicio | Sesion_Swing, Sesion_Motor_Web |
-| 11 | Reintento | Aviso y marca persisten mientras no se vuelve a x≤288. LISTO dura 70 muestras. Frenado, puerta y movimiento se mantienen. Terminales tienen prioridad | Avisos_VM, Avisos_Swing, Prioridad_Avisos |
+| 11 | Reintento | Aviso y marca persisten mientras no se vuelve a x≤288. LISTO dura 93 muestras. Frenado, puerta y movimiento se mantienen. Terminales tienen prioridad | Avisos_VM, Avisos_Swing, Prioridad_Avisos |
 | 12 | Sin solapamientos ni residuos | Margen x328–335 vacío, iguales los píxeles fijos al cambiar números, pie y marca borrados al vencer o rearmar. Tras Espacio desaparecen avisos terminados | Avisos_VM, Sesion_Prolongada |
 | 13 | Regresiones de v4 | 3.000 ciclos por cada flecha y sin entrada, sin puntos. La sesión de 8.504 muestras alternó 8 victorias, 8 derrotas y 16 reinicios, con balance de asignaciones estable | Tecla_*, Sesion_Prolongada |
 
